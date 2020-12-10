@@ -1,11 +1,11 @@
 class DataSourcesController < ApplicationController
   def index
-    render json: response
+    render json: resp_data
   end
 
   private
 
-  def response
+  def resp_data
     {
       first_name: 'Олег',
       last_name: 'Вещий',
