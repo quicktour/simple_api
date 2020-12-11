@@ -1,6 +1,6 @@
 class DataSourcesController < ApplicationController
   def index
-    case params[test]
+    case params[:test]
     when '1'
       data = resp_data_1
     when '2'
