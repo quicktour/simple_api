@@ -1,11 +1,11 @@
 class DataSourcesController < ApplicationController
   def index
     case params[test]
-    when 1
+    when '1'
       data = resp_data_1
-    when 2
+    when '2'
       data = resp_data_2
-    when 3
+    when '3'
       data = resp_data_3
     end
     render json: data
