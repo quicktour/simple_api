@@ -5,8 +5,6 @@ class DataSourcesController < ApplicationController
       data = resp_data_1
     when '2'
       data = resp_data_2
-    when '3'
-      data = resp_data_3
     end
     render json: data
   end
@@ -15,31 +13,35 @@ class DataSourcesController < ApplicationController
 
   def resp_data_1
     {
-      user_id: 12,
-      mode_study: 1231231,
-      academic_year_id: 1234,
-      portfolio: 'wehfwjhbjwhbcjebch',
-      number: 'dqwqwdqwddw'
+      user_id: 9044,
+      app_id: 18935,
+      first_name_en: "Fedor",
+      last_name_en: "Ivanov",
+      first_name_ru: "Федор",
+      last_name_ru: "Иванов",
+      middle_name_ru: "Витальевич",
+      place_of_birth: "Vena",
+      date_of_birth: "1984-10-10",
+      gender: "M",
+      email: "f.ivanov@test.hh",
+      mobile_phone: "8950123123"
     }
   end
 
   def resp_data_2
     {
-      user_id: 88,
-      mode_study: 34566,
-      academic_year_id: 2019,
-      portfolio: 'какой-то текст',
-      number: 'тоже какой-то текст'
-    }
-  end
-
-  def resp_data_3
-    {
-      user_id: 99,
-      mode_study: 1256,
-      academic_year_id: 2020,
-      portfolio: 'еще один какой-то текст',
-      number: 'еще тоже какой-то текст'
+      user_id: 8934,
+      app_id: 19045,
+      first_name_en: "Alexey",
+      last_name_en: "Mazurin",
+      first_name_ru: "Алексей",
+      last_name_ru: "Мазурин",
+      middle_name_ru: "Андреевич",
+      place_of_birth: "Riga",
+      date_of_birth: "1988-02-06",
+      gender: "M",
+      email: "a.mazurin@test.hh",
+      mobile_phone: "89002345566"
     }
   end
 end
